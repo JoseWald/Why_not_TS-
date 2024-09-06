@@ -1,0 +1,4 @@
+TypeScript don't make your life terrible but it will show you 
+how terrible your life is.
+In this project ,Imana show you how can your code will be better if
+you write it on TypeScript.
