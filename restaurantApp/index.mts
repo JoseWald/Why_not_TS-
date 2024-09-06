@@ -1,22 +1,22 @@
- export let menu=[
+ let menu=[
     {name:"Margherita" , price:8},
     {name:"Pepperroni" , price:10 },
     {name:"Hawaiian" , price:10 },
     {name:"Veggie" , price:9 }
 ]
 
-export let cashInRegister=100
-export let orderQueue=[
+let cashInRegister=100
+let orderQueue=[
     {pizza:"name of pizza", statut:"Ordered/Completed" , Id:0}
 ]
-export let nextOrderId=1;
+let nextOrderId=1;
 
-export const addPizza=(name , price)=>{
+const addPizza=(name , price)=>{
     menu.push({name:name, price: price})
 
 }
 
- export const placeOrder=(name)=>{
+ const placeOrder=(name)=>{
      const order=menu.find(pizza=>pizza.name==name)
    
      if(order){
@@ -27,7 +27,7 @@ export const addPizza=(name , price)=>{
      return order
 }
 
- export const completeOrder=(Id)=>{
+ const completeOrder=(Id)=>{
     const order=orderQueue.find(order=>order.Id==Id)
     if(order){
            order.statut="Completed"
