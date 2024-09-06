@@ -28,5 +28,19 @@ const completeOrder=(Id)=>{
 }
 
 addPizza("Chiken bacon ranch",12)
-addPizza("BBQ Chiken",12)
+addPizza("BBQ Chicken",12)
 addPizza("Spicy sausage",11)
+
+placeOrder("BBQ Chicken")
+completeOrder("1")
+
+console.log("Menu:"+menu)
+console.log("Cash In Register:"+ cashInRegister)
+console.log("order Queue:"+orderQueue)
+
+/*
+    There is some bug in this code
+    e.g:I tried to increment a const value
+    the best way to solve it is to move to TypeScript
+    So let's move on and see how everything can be changed
+*/
