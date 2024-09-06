@@ -1,4 +1,15 @@
 TypeScript don't make your life terrible but it will show you 
 how terrible your life is.
+
+-TypeScript can aware you all the potential error you may have,so you can avoid all
+the crash when your project is runing
+-Don't be afraid of the error,TS doesn' add new bug but it show you the bug that
+has already existed
+-Assumes that everything will work completly
+-Remember,the easiest way is the hardest way
+
+Look at:
+-restaurantApp to take a look the differeces between JS and TS 
+
 In this project ,Imana show you how can your code will be better if
 you write it on TypeScript.
