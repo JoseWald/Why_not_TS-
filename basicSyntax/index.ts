@@ -18,3 +18,5 @@ let person  :  Person={
     age:18,
     isStudent:true
 }
+
+//Nested Object types
