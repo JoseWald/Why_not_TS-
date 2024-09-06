@@ -11,12 +11,12 @@ let orderQueue=[
 ]
 let nextOrderId=1;
 
-const addPizza=(name , price)=>{
+const addPizza=(name :string , price : number)=>{
     menu.push({name:name, price: price})
 
 }
 
- const placeOrder=(name)=>{
+ const placeOrder=(name : string)=>{
      const order=menu.find(pizza=>pizza.name==name)
    
      if(order){
@@ -27,7 +27,7 @@ const addPizza=(name , price)=>{
      return order
 }
 
- const completeOrder=(Id)=>{
+ const completeOrder=(Id : number)=>{
     const order=orderQueue.find(order=>order.Id==Id)
     if(order){
            order.statut="Completed"
@@ -41,7 +41,7 @@ addPizza("BBQ Chicken",12)
 addPizza("Spicy sausage",11)
 
 placeOrder("BBQ Chicken")
-completeOrder("1")
+completeOrder(1)
 
 console.log("Menu:"+menu)
 console.log("Cash In Register:"+ cashInRegister)
