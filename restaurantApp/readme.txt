@@ -1,0 +1,1 @@
+This is a console app on JS to show you the benefit of using TypeScript instead
