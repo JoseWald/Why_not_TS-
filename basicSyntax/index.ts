@@ -82,3 +82,27 @@ function getInfo(info : string | number):Person1 | boolean{
         return false
     }
 }
+
+//Utility types
+type Student={
+    name:string,
+    id:number,
+    favSubject?:string,//indicate that it's optional
+}
+
+let Joe :Student = {
+    name: 'Joe',
+    id:1985
+}
+
+let Bob:Student = {
+    name: 'Bob',
+    id:2313,
+    favSubject:"Mathematics"
+}
+
+//Partial types
+type StudentInfo= Partial<Student>
+let StudentName : StudentInfo= {
+    name:"Jean"
+}
