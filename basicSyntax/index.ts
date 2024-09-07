@@ -106,3 +106,15 @@ type StudentInfo= Partial<Student>
 let StudentName : StudentInfo= {
     name:"Jean"
 }
+
+//Omit type 
+type ReleasedStudent=Omit<Student , "id">//released student no longer have an id , i hope you will understand
+let Dolph: ReleasedStudent= {
+    name:"Dolph",
+    favSubject:"Photography"
+}
+
+type DumbStudent=Omit<Student , "id" | "favSubject">
+let Gogo:DumbStudent={
+    name:"Gogo",
+}
