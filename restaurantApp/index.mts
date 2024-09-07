@@ -1,4 +1,10 @@
- let menu=[
+ type Pizza={ name:string , price:Number}
+ type Order={
+    pizza:String,
+    status: "Ordered" | "Completed",
+    Id:number
+ }
+ let menu = [
     {name:"Margherita" , price:8},
     {name:"Pepperroni" , price:10 },
     {name:"Hawaiian" , price:10 },
@@ -6,8 +12,8 @@
 ]
 
 let cashInRegister=100
-let orderQueue=[
-    {pizza:"name of pizza", statut:"Ordered/Completed" , Id:0}
+let orderQueue :Order[]=[
+    
 ]
 let nextOrderId=1;
 
@@ -21,7 +27,7 @@ const addPizza=(name :string , price : number)=>{
    
      if(order){
         orderQueue.push({pizza:order.toString(), statut:"Ordered",Id:nextOrderId++})
-        cashInRegister+=order.price
+        cashInRegister+=Number(order.price)
      }
        
      return order
