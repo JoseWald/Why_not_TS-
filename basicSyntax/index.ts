@@ -118,3 +118,12 @@ type DumbStudent=Omit<Student , "id" | "favSubject">
 let Gogo:DumbStudent={
     name:"Gogo",
 }
+
+//Generics
+const item : string []=["fruits","vegetable","junk food"]
+//to avoid using any that basically turn off TypeScript ,we use generics
+function getLastItem<Type>(array : Type[]): Type | undefined {
+    return array[array.length-1]
+}
+console.log("ko")
+console.log(getLastItem(item))
