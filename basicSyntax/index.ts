@@ -56,3 +56,7 @@ let people: Array<Person1>=[Jean]
 
 //Literal types
 const myName2="Wald"
+
+//Unions
+type Sex= "male" | "female"
+let gender:Sex = "female"
