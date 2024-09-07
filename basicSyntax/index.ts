@@ -53,3 +53,6 @@ displayInfo(Jean)
 //Array declarations
 let personList :Person1[] =[Jean]
 let people: Array<Person1>=[Jean]
+
+//Literal types
+const myName2="Wald"
