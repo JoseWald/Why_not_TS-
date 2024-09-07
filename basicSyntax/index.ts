@@ -60,3 +60,21 @@ const myName2="Wald"
 //Unions
 type Sex= "male" | "female"
 let gender:Sex = "female"
+
+
+//Function
+function getInfo(info : string | number):Person1 | boolean{
+    const personFound=personList.find(pers=>{
+        if(typeof info === "number"){
+            pers.age==info
+        }else if(typeof info === "string"){
+            pers.name.toLowerCase==info.toLowerCase
+        }
+    })
+
+    if(personFound){
+        return personFound
+    }else{
+        return false
+    }
+}
