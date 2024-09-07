@@ -2,6 +2,10 @@
 let myName: string = "Jose" 
 let myAge : number = 19
 let isStudent : boolean = true
+let value :any = "string"//the warning message goes away 
+value = 1
+value=true
+
 
 //custom types
 type Food = string
