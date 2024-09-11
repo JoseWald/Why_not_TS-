@@ -125,5 +125,5 @@ const item : string []=["fruits","vegetable","junk food"]
 function getLastItem<Type>(array : Type[]): Type | undefined {
     return array[array.length-1]
 }
-console.log("ko")
+console.log("kod")
 console.log(getLastItem(item))

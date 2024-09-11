@@ -26,7 +26,7 @@ const addPizza=(name :string , price : number)=>{
      const order=menu.find(pizza=>pizza.name==name)
    
      if(order){
-        orderQueue.push({pizza:order.toString(), statut:"Ordered",Id:nextOrderId++})
+        orderQueue.push({pizza:order.toString(), status:"Ordered",Id:nextOrderId++})
         cashInRegister+=Number(order.price)
      }
        
@@ -36,7 +36,7 @@ const addPizza=(name :string , price : number)=>{
  const completeOrder=(Id : number)=>{
     const order=orderQueue.find(order=>order.Id==Id)
     if(order){
-           order.statut="Completed"
+           order.status="Completed"
     }
  
     return order

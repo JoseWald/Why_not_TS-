@@ -1,17 +1,18 @@
+"use strict";
 //variable declaration
-var myName = "Jose";
-var myAge = 19;
-var isStudent = true;
-var value = "string"; //the warning message goes away 
+let myName = "Jose";
+let myAge = 19;
+let isStudent = true;
+let value = "string"; //the warning message goes away 
 value = 1;
 value = true;
-var favFood = "rice";
-var person = {
+let favFood = "rice";
+let person = {
     name: "Jose",
     age: 18,
     isStudent: true
 };
-var Jean = {
+let Jean = {
     name: "Jose",
     age: 18,
     isStudent: true,
@@ -22,18 +23,18 @@ var Jean = {
     }
 };
 function displayInfo(person) {
-    console.log("".concat(person.name, " lives at ").concat(person.adress.street, " of ").concat(person.adress.city, " ").concat(person.adress.country));
+    console.log(`${person.name} lives at ${person.adress.street} of ${person.adress.city} ${person.adress.country}`);
 }
 displayInfo(Jean);
 //Array declarations
-var personList = [Jean];
-var people = [Jean];
+let personList = [Jean];
+let people = [Jean];
 //Literal types
-var myName2 = "Wald";
-var gender = "female";
+const myName2 = "Wald";
+let gender = "female";
 //Function
 function getInfo(info) {
-    var personFound = personList.find(function (pers) {
+    const personFound = personList.find(pers => {
         if (typeof info === "number") {
             pers.age == info;
         }
@@ -48,30 +49,30 @@ function getInfo(info) {
         return false;
     }
 }
-var Joe = {
+let Joe = {
     name: 'Joe',
     id: 1985
 };
-var Bob = {
+let Bob = {
     name: 'Bob',
     id: 2313,
     favSubject: "Mathematics"
 };
-var StudentName = {
+let StudentName = {
     name: "Jean"
 };
-var Dolph = {
+let Dolph = {
     name: "Dolph",
     favSubject: "Photography"
 };
-var Gogo = {
+let Gogo = {
     name: "Gogo",
 };
 //Generics
-var item = ["fruits", "vegetable", "junk food"];
+const item = ["fruits", "vegetable", "junk food"];
 //to avoid using any that basically turn off TypeScript ,we use generics
 function getLastItem(array) {
     return array[array.length - 1];
 }
-console.log("ko");
+console.log("kod");
 console.log(getLastItem(item));
